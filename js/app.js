@@ -3644,7 +3644,6 @@
             return configWatcher;
         }
         scrollWatcherCreate(configWatcher) {
-            console.log(configWatcher);
             this.observer = new IntersectionObserver(((entries, observer) => {
                 entries.forEach((entry => {
                     this.scrollWatcherCallback(entry, observer);
@@ -3833,7 +3832,7 @@
             }));
         }
     }), 0);
-    window["FLS"] = true;
+    window["FLS"] = false;
     addLoadedClass();
     menuInit();
     spollers();
